@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,200;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,400;1,700;1,800;1,900&display=swap');
+
+$font-family-sans-serif: 'Public Sans', sans-serif;
+$primary: hsl(136, 65%, 51%);
+$secondary:  hsl(233, 26%, 24%);
+$navbar-nav-link-padding-x: 17px;
+$card-border-width: none;
+$btn-border-radius: 20px;
+$btn-padding-x: 20px;
+$navbar-light-color: #000;
+$navbar-light-active-color: #00000070;
+
+.navbar{
+    z-index: 10000;
+}
+.bg-wheat{
+    background: hsl(0, 0%, 98%);
+}
+.btn-primary{
+    color: white !important;
+}
+.hero{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.vh-70{
+    min-height: 70vh;
+}
+
+.vh-100-custom{
+    min-height: 100vh;
+}
+.vh-30{
+    min-height: 30vh;
+}
+.vh-93{
+    min-height: 93vh;
+}
+.fs-0{
+    font-size: 3rem;
+}
+.card-img-top{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+.card{
+    min-height: 455px;
+}
+.change-color{
+    fill: green;
+}
+.svg-class{
+    fill: #fff;
+    transition: 0.3s;
+}
+.pointer{
+    cursor: pointer;
+}
+.svg-class:hover{
+    fill: $primary;
+}
+.shortcut-link{
+    color: white;
+    text-decoration: none;
+}
+.shortcut-link:hover{
+    color: $primary;
+    cursor: pointer;
+}
+.copyright{
+    text-align: end;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.w-50-custom{
+    width: 50%;
+}
+.navbar-toggler{
+    border: none !important;
+}
+@media screen and (max-width: 380px) {
+    #second-section{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width:480px) {
+    .footer{
+        text-align: center;
+    }
+    .w-50-custom{
+        width: 100%;
+    }
+    .footer-logo{
+        margin-top: 30px;
+    }
+    .svg-container{
+        margin: 20px 0;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    .hero-container{
+        flex-direction: column-reverse;
+    }
+    .fs-0{
+        font-size: 2rem; 
+    }
+    .four-icon{
+        text-align: center;
+    }
+    .navbar-when-open{
+        position: fixed !important;
+        top: 60px;
+        right: 15px;
+        left: 15px;
+        padding: 10px 20px;
+        background: white;
+        border-radius: 3px;
+        box-shadow: -1px 4px 9px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -1px 4px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 4px 9px -1px rgba(0,0,0,0.75);
+    }
+    .nav-link{
+        text-align: center;
+    }
+}
+@import '../node_modules/bootstrap/scss/bootstrap';
